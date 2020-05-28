@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+   
+  :root{
+      --wrapper-width: 80rem;
+    /*--------------------- COLORS ---------------------*/
+      --primary-theme: #9aae04; /*VERDE*/
+      --second-theme: #d9d9d9;  /*GRIS*/
+      --border-color: #777;    /*GRIS OSCURO*/
+    /*--------------------- END COLORS ---------------------*/
+    /*--------------------- FONTS ---------------------*/
+      --font-primary: 'verdana';
+      --base_font_size: 1rem;
+      --base_titles_size: 2rem;
+      --big_titles_size: 3rem;
+    /*--------------------- END FONTS ---------------------*/
+    /*--------------------- SPACING ---------------------*/
+      --base_spacing-size: 1rem;  /*Margin y Padding*/
+    /*--------------------- END SPACING ---------------------*/
+   
+  }
+   
+  /*--------------------- GENERAL ---------------------*/
+  html {
+    font-family: var(--font-primary);
+    font-size: var(--base_font_size);
+  }
+  /*--------------------- END GENERAL ---------------------*/
+   
+  /*--------------------- WRAPPER ---------------------*/
+  .wrapper {
+    margin: 0 auto;
+    width: var(--wrapper-width);
+  }
+  .news {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px dotted var(--primary-theme);
+    padding-top: 10px;
+  }
+  .container-news p {
+    background-color: var(--second-theme);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+  }
+  .image-publicity > img {
+    height: 100px;
+  }
+  .image-publicity {
+    padding: 13px;
+    background-color: var(--second-theme);
+    border-left: 1px solid var(--primary-theme);
+    margin-bottom: 10px;
+  }
+  /*--------------------- END WRAPPER ---------------------*/
+   
+   
+  /*--------------------- HEADER ---------------------*/
+  .header {
+    width: 100%;
+    background-color: var(--second-theme);
+    background-size: 100%;
+  }
+  .header-content {
+    margin: 0 auto;
+    width: var(--wrapper-width);
+  }
+  .header .header-content .principal-title {
+    padding-top: 30px;
+  }
+  
+  /*--------------------- END HEADER ---------------------*/
+   
+   
+  /*--------------------- MENU -------------------*/
+  
+  .navigation-list {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px;
+    background-color: white;
+  }
+  .navigation-list:hover {
+    background-color: var(--primary-theme);
+    
+  }
+  .navigation-list:hover .navigation-link {
+    color: white;
+    text-decoration: underline;
+  }
+  .navigation-list:first-child {
+    border-left: 1px solid black;
+  }
+  .navigation-ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navigation-link {
+      color: var(--primary-theme);
+      text-decoration: none;
+  }
+  /*--------------------- END MENU -------------------*/
+   
+   
+  /*--------------------- BODY BASE -------------------*/
+  /* body {
+    margin: 0 auto;
+    width: var(--wrapper-width);
+    font-family: var(--font-primary);
+    font-size: var(--base_font_size);
+  } */
+  /*--------------------- END BODY BASE -------------------*/
+   
+   
+  /*--------------------- FORM -------------------*/
+  .container-forms {
+    border-bottom: 1px dotted var(--primary-theme);
+    border-top: 1px dotted var(--primary-theme);
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .form-data {
+    margin-block-end: 10px;
+  }
+  .form-data > .container-form {
+    width: 300px;
+    margin-inline-start: 20px;
+    display: inline-grid;
+    margin-top: 15px;
+  }
+  .form-data > .container-form > input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--primary-theme);
+    height: 30px;
+  }
+  .form-data > .container-form > label {
+    margin-bottom: 10px;
+  }
+  .form-data > .container-form > ol > li {
+    margin-top: 5px;
+  }
+  .form-title {
+    padding: 10px;
+  }
+  .form-data > .container-radiobutton {
+    /* width: 300px; */
+    display: inline-block;
+  }
+  .form-data > .container-radiobutton > input {
+    height: initial;
+  }
+  .btn {
+    width: 100px;
+    background-color: var(--primary-theme);
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  .btn:hover {
+    background-color: #6c7a00;
+    cursor: pointer;
+  }
+  /*--------------------- END FORM -------------------*/
+   
+   
+  /*--------------------- TABLE -------------------*/
+  .table-cool caption {
+    margin: 10px;
+    text-align: left;
+  }
+  .table-cool {
+    width: 100%;
+    border-spacing: 0px;
+    margin-bottom: 10px;
+  }
+  .table-cool th, td {
+    height: 40px;
+    border: 1px solid black;
+  }
+  .table-cool th {
+    background-color: var(--primary-theme);
+  }
+  .table-cool td {
+    padding-left: 20px;
+  }
+  /*--------------------- END TABLE -------------------*/
