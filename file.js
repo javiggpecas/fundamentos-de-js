@@ -1,4 +1,4 @@
-
+/** Cambio de titulo de noticias */
 const links = document.getElementsByClassName('navigation-link');
 const titleNew = document.getElementById('title-new');
 for (let i = 0; i < links.length; i++) {
@@ -9,6 +9,7 @@ for (let i = 0; i < links.length; i++) {
     })
 }
 
+/** Añadir linea a tabla a traves de los datos del formulario */
 const formulario = document.getElementById("formulario");
 formulario.addEventListener('submit', event => {
     event.preventDefault();
