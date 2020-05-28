@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="file.js"></script>
         <title>Curso Básico HTML5</title>
     </head>
     <body>
@@ -25,7 +24,7 @@
         <div class="wrapper">
             <article class="news">
                 <div class="container-news">
-                    <h2>Mi Noticia</h2>
+                    <h2 id="title-new">Mi Noticia</h2>
                     <p>Minions <b>ipsum</b> tank yuuu! Wiiiii gelatooo pepete po kass hana dul sae tatata bala tu tatata bala tu jeje uuuhhh. La bodaaa tank yuuu! La bodaaa daa. Bananaaaa me want bananaaa! Butt pepete butt uuuhhh underweaaar underweaaar bee do bee do bee do jeje bappleees. Pepete baboiii pepete underweaaar. La bodaaa poulet tikka masala jeje ti aamoo! Me want bananaaa! Para tú underweaaar bappleees underweaaar bee do bee do bee do. Baboiii daa la bodaaa underweaaar po kass hana dul sae gelatooo uuuhhh. Baboiii belloo! Po kass tatata bala tu jiji belloo! Poulet tikka masala underweaaar potatoooo aaaaaah. Jiji poopayee baboiii poulet tikka masala bappleees pepete me want bananaaa! Wiiiii.</p>
                     <p>Underweaaar potatoooo me want bananaaa! Jeje para tú bappleees chasy bappleees tank yuuu! Para tú. Belloo! me want bananaaa! Uuuhhh pepete butt para tú. Poopayee belloo! Aaaaaah bananaaaa butt bananaaaa bananaaaa belloo! Baboiii aaaaaah. Jeje me want bananaaa! Chasy gelatooo pepete para tú tulaliloo hana dul sae gelatooo. Underweaaar jiji potatoooo me want bananaaa! Po kass la bodaaa bappleees me want bananaaa! Jiji wiiiii. Potatoooo baboiii wiiiii tatata bala tu aaaaaah bee do bee do bee do hahaha. Bananaaaa poulet tikka masala butt pepete belloo! Bee do bee do bee do daa hahaha wiiiii wiiiii. Poopayee baboiii butt ti aamoo! Underweaaar gelatooo tatata bala tu hahaha. Poopayee la bodaaa chasy bappleees belloo! Me want bananaaa! Poopayee jeje potatoooo ti aamoo!</p>
                 </div>
@@ -35,12 +34,12 @@
             </article>
             <section class="container-forms">
                 <h2>Mi Formulario</h2>
-                <form>
+                <form id="formulario" name="formulario">
                     <fieldset class="form-data personal-data">
                         <legend class="form-title">Datos personales</legend>
                         <div class="container-form">
                             <label for="name">Nombre</label>
-                            <input type="text" id="name">
+                            <input type="text" name="nombre" id="name">
                         </div>
                         <div class="container-form">
                             <label for="surname">Apellidos</label>
@@ -48,7 +47,7 @@
                         </div>
                         <div class="container-form">
                             <label for="telephone">Teléfono</label>
-                            <input type="tel" id="telephone">
+                            <input type="number" id="telephone">
                         </div>
                         <div class="container-form container-radiobutton">
                             <input type="radio" id="dni" name="identityCard" value="DNI">
@@ -72,23 +71,23 @@
                             <ol>
                                 <li>
                                     <label for="futbol">Fútbol</label>
-                                    <input type="checkbox" name="size" id="futbol" value="small">
+                                    <input type="checkbox" name="sports" id="futbol" value="Fútbol">
                                 </li>
                                 <li>
                                     <label for="bascket">Baloncesto</label>
-                                    <input type="checkbox" name="size" id="bascket" value="small">
+                                    <input type="checkbox" name="sports" id="bascket" value="Baloncesto">
                                 </li>
                                 <li>
                                     <label for="rugby">Rugby</label>
-                                    <input type="checkbox" name="size" id="rugby" value="small">
+                                    <input type="checkbox" name="sports" id="rugby" value="Rugby">
                                 </li>
                                 <li>
                                     <label for="paddle">Padel</label>
-                                    <input type="checkbox" name="size" id="paddle" value="small">
+                                    <input type="checkbox" name="sports" id="paddle" value="Padel">
                                 </li>
                                 <li>
                                     <label for="basque_ball">Pelota vasca</label>
-                                    <input type="checkbox" name="size" id="basque_ball" value="small">
+                                    <input type="checkbox" name="sports" id="basque_ball" value="Pelota vasca">
                                 </li>
                             </ol>
                         </div>
@@ -97,7 +96,7 @@
                     <input class="btn" type="submit">
                 </form>
             </section>
-            <table class="table-cool">
+            <table class="table-cool" id="tableMolona">
                 <caption><h2>Título de nuestra Tabla Molona</h2></caption>
                 <thead>
                 <tr>
@@ -127,6 +126,6 @@
                 
             </table>
         </div>
-        
     </body>
+    <script src="file.js"></script>
 </html>
